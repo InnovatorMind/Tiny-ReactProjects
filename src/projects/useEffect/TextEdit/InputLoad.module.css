@@ -1,0 +1,40 @@
+#inputText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.text {
+    position: fixed;
+    top: 16px;
+    background-color: #2d2d2d;
+    margin: 4px;
+    padding: 4px;
+    border: 2px solid rgba(255, 255, 255, 0.165);
+    border-radius: 4px;
+}
+
+.textForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.129);
+    margin: 4px;
+    border-radius: 8px;
+    gap: 4px;
+}
+
+.form-button {
+    background-color: #262424;
+    color: white;
+    margin-top: 8px;
+    padding: 4px;
+}
+
+input {
+    background-color: #353333;
+    color: white;
+}

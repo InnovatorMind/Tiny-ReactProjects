@@ -1,0 +1,39 @@
+.app {
+  display: flex;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #222222;
+  padding-top: 20px;
+  position: fixed;
+  height: 100vh;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.sidebar div {
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.sidebar div:hover {
+  background-color: #ddd;
+}
+
+.sidebar .active {
+  background-color: #333;
+  color: white;
+}
+
+.mainContent {
+  margin-left: 200px;
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.section {
+  height: 100vh;
+  padding: 40px 20px;
+  border-bottom: 1px solid #ccc;
+}
