@@ -21,6 +21,11 @@ function Home() {
       link: "/refcount",
     },
     {
+      name: "UsersByID",
+      description: "Basic useParams ",
+      link: "/user/1",
+    },
+    {
       name: "SideBar",
       description: "Side-Bar",
       link: "/sidebar",
