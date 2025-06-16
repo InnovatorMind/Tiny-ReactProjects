@@ -8,6 +8,8 @@ import SideBar from "./projects/SideBar/SideBar.jsx";
 import BasicUserNavigator from "./projects/useParam/BasicParamsUse/BasicUserNavigator.jsx";
 import SearchComponent from "./projects/customHooks/BasicProjects/SearchComponent.jsx";
 import DarkModeToggle from "./projects/customHooks/BasicProjects/DarkModeToggle.jsx";
+import FetchExample from "./projects/customHooks/BasicProjects/FetchExample.jsx";
+
 import './App.css'
 
 function App() {
@@ -22,6 +24,7 @@ function App() {
         <Route path="/user/:id" element={<BasicUserNavigator />} />
         <Route path="/searchComponent" element={<SearchComponent />} />
         <Route path="/darkMode" element={<DarkModeToggle />} />
+        <Route path="/fetchExample" element={<FetchExample />} />
         <Route path="/sidebar" element={<SideBar />} />
       </Routes>
     </Router>

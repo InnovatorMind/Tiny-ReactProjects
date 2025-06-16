@@ -36,6 +36,11 @@ function Home() {
       link: "/darkMode",
     },
     {
+      name: "FetchExample",
+      description: "Fetch Example ",
+      link: "/fetchExample",
+    },
+    {
       name: "SideBar",
       description: "Side-Bar",
       link: "/sidebar",

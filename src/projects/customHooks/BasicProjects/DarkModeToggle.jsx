@@ -1,4 +1,4 @@
-import { useDarkMode } from "./useDarkMode";
+import { useDarkMode } from "./hooks/useDarkMode";
 import styles from "./DarkModeToggle.module.css";
 
 export default function DarkModeToggle() {
