@@ -6,7 +6,8 @@ import InputFocus from "./projects/useRef/InputFocus/InputFocus.jsx"
 import RefCounter from "./projects/useRef/Counter/RefCounter.jsx"
 import SideBar from "./projects/SideBar/SideBar.jsx";
 import BasicUserNavigator from "./projects/useParam/BasicParamsUse/BasicUserNavigator.jsx";
-import SearchComponent from "./projects/customHooks/Debouncing_Input_Hook/DebouncingHook.jsx";
+import SearchComponent from "./projects/customHooks/BasicProjects/SearchComponent.jsx";
+import DarkModeToggle from "./projects/customHooks/BasicProjects/DarkModeToggle.jsx";
 import './App.css'
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path="/refcount" element={<RefCounter />} />
         <Route path="/user/:id" element={<BasicUserNavigator />} />
         <Route path="/searchComponent" element={<SearchComponent />} />
+        <Route path="/darkMode" element={<DarkModeToggle />} />
         <Route path="/sidebar" element={<SideBar />} />
       </Routes>
     </Router>

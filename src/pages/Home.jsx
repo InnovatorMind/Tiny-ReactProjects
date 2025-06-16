@@ -31,6 +31,11 @@ function Home() {
       link: "/searchComponent",
     },
     {
+      name: "DarkModeToggle",
+      description: "Modes ",
+      link: "/darkMode",
+    },
+    {
       name: "SideBar",
       description: "Side-Bar",
       link: "/sidebar",

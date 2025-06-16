@@ -1,0 +1,44 @@
+/* src/components/DarkModeToggle.module.css */
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.light {
+  background-color: #f0f9ff;
+  color: #1e293b;
+}
+
+.dark {
+  background-color: #121212;
+  color: #f3f4f6;
+}
+
+.button {
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 24px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.button:hover {
+  transform: scale(1.05);
+}
+
+.lightButton {
+  background: linear-gradient(135deg, #dbeafe 0%, #93c5fd 100%);
+  color: #1e3a8a;
+}
+
+.darkButton {
+  background: linear-gradient(135deg, #374151 0%, #111827 100%);
+  color: #f8fafc;
+}
