@@ -26,6 +26,11 @@ function Home() {
       link: "/user/1",
     },
     {
+      name: "SearchComponent",
+      description: "Search Component",
+      link: "/searchComponent",
+    },
+    {
       name: "SideBar",
       description: "Side-Bar",
       link: "/sidebar",

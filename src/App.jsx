@@ -6,6 +6,7 @@ import InputFocus from "./projects/useRef/InputFocus/InputFocus.jsx"
 import RefCounter from "./projects/useRef/Counter/RefCounter.jsx"
 import SideBar from "./projects/SideBar/SideBar.jsx";
 import BasicUserNavigator from "./projects/useParam/BasicParamsUse/BasicUserNavigator.jsx";
+import SearchComponent from "./projects/customHooks/Debouncing_Input_Hook/DebouncingHook.jsx";
 import './App.css'
 
 function App() {
@@ -15,10 +16,11 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/counter" element={<Counter />} /> 
         <Route path="/textEdit" element={<TextEdit />} /> 
-        <Route path="/sidebar" element={<SideBar />} />
         <Route path="/input" element={<InputFocus />} />
         <Route path="/refcount" element={<RefCounter />} />
         <Route path="/user/:id" element={<BasicUserNavigator />} />
+        <Route path="/searchComponent" element={<SearchComponent />} />
+        <Route path="/sidebar" element={<SideBar />} />
       </Routes>
     </Router>
   );
