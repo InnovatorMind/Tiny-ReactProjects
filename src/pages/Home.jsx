@@ -41,6 +41,11 @@ function Home() {
       link: "/fetchExample",
     },
     {
+      name: "Infinite load",
+      description: "Infinite lading",
+      link: "/feed",
+    },
+    {
       name: "SideBar",
       description: "Side-Bar",
       link: "/sidebar",

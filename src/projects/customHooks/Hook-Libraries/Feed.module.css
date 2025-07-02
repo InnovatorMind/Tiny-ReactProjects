@@ -1,0 +1,27 @@
+/* Feed.module.css */
+.container {
+  padding: 1rem;
+}
+
+.item {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  background-color: #e44141;
+  transition: transform 0.2s ease;
+}
+
+.item:hover {
+  transform: scale(1.02);
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.loading,
+.end {
+  text-align: center;
+  font-style: italic;
+  padding: 1rem;
+  color: #555;
+}
