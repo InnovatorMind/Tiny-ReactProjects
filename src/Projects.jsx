@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
+import Home from "./pages/Home.jsx";
 import Counter from "./projects/useEffect/counter/Counter.jsx"
 import TextEdit from "./projects/useEffect/TextEdit/InputLoad.jsx"
 import InputFocus from "./projects/useRef/InputFocus/InputFocus.jsx"
@@ -10,6 +10,7 @@ import SearchComponent from "./projects/customHooks/BasicProjects/SearchComponen
 import DarkModeToggle from "./projects/customHooks/BasicProjects/DarkModeToggle.jsx";
 import FetchExample from "./projects/customHooks/BasicProjects/FetchExample.jsx";
 import Feed from "./projects/customHooks/Hook-Libraries/Feed.jsx";
+import Accordion from "./projects/Accordion/App.jsx";
 
 import './App.css'
 
@@ -28,6 +29,7 @@ function App() {
         <Route path="/fetchExample" element={<FetchExample />} />
         <Route path="/sidebar" element={<SideBar />} />
         <Route path="/feed" element={<Feed />} />
+        <Route path="/accordian" element={<Accordion />} />
       </Routes>
     </Router>
   );
