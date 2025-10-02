@@ -50,6 +50,21 @@ function Home() {
       description: "Side-Bar",
       link: "/sidebar",
     },
+    {
+      name: "Tabs",
+      description: "Tabs",
+      link: "/tabs",
+    },
+    {
+      name: "Data Table",
+      description: "DataTabler",
+      link: "/datatable",
+    },
+    {
+      name: "Like Button",
+      description: "Like Button",
+      link: "/likebutton",
+    },
   ];
 
   return (

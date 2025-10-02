@@ -11,6 +11,10 @@ import DarkModeToggle from "./projects/customHooks/BasicProjects/DarkModeToggle.
 import FetchExample from "./projects/customHooks/BasicProjects/FetchExample.jsx";
 import Feed from "./projects/customHooks/Hook-Libraries/Feed.jsx";
 import Accordion from "./projects/Accordion/App.jsx";
+import DataTable from "./projects/DataTable/App.jsx";
+import LikeButton from "./projects/LikeButton/App.jsx";
+import Tabs from "./projects/Tabs/App.jsx";
+
 
 import './App.css'
 
@@ -30,6 +34,9 @@ function App() {
         <Route path="/sidebar" element={<SideBar />} />
         <Route path="/feed" element={<Feed />} />
         <Route path="/accordian" element={<Accordion />} />
+        <Route path="/tabs" element={<Tabs />} />
+        <Route path="/datatable" element={<DataTable />} />
+        <Route path="/likebutton" element={<LikeButton />} />
       </Routes>
     </Router>
   );
