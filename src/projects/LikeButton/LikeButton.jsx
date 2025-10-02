@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { HeartIcon, SpinnerIcon } from './icons.jsx';
+import { HeartIcon, SpinnerIcon } from './Icons.jsx';
 
 const API_URL = 'https://questions.greatfrontend.com/api/questions/like-button';
 
