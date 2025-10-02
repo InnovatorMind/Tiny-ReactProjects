@@ -50,6 +50,21 @@ function Home() {
       description: "Side-Bar",
       link: "/sidebar",
     },
+    {
+      name: "Accordion",
+      description: "Accordion",
+      link: "/accordion",
+    },
+    {
+      name: "Tabs",
+      description: "Tabs",
+      link: "/tabs",
+    },
+    {
+      name: "Data Table",
+      description: "Data Table",
+      link: "/datatable",
+    },
   ];
 
   return (

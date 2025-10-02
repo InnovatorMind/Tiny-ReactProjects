@@ -1,37 +1,49 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./pages/Home.jsx";
-import Counter from "./projects/useEffect/counter/Counter.jsx"
-import TextEdit from "./projects/useEffect/TextEdit/InputLoad.jsx"
-import InputFocus from "./projects/useRef/InputFocus/InputFocus.jsx"
-import RefCounter from "./projects/useRef/Counter/RefCounter.jsx"
-import SideBar from "./projects/SideBar/SideBar.jsx";
-import BasicUserNavigator from "./projects/useParam/BasicParamsUse/BasicUserNavigator.jsx";
-import SearchComponent from "./projects/customHooks/BasicProjects/SearchComponent.jsx";
-import DarkModeToggle from "./projects/customHooks/BasicProjects/DarkModeToggle.jsx";
-import FetchExample from "./projects/customHooks/BasicProjects/FetchExample.jsx";
-import Feed from "./projects/customHooks/Hook-Libraries/Feed.jsx";
-import Accordion from "./projects/Accordion/App.jsx";
+import { Suspense, lazy } from "react";
 
-import './App.css'
+// Lazy-loaded components
+const Home = lazy(() => import("./pages/Home.jsx"));
+const Counter = lazy(() => import("./projects/useEffect/counter/Counter.jsx"));
+const TextEdit = lazy(() => import("./projects/useEffect/TextEdit/InputLoad.jsx"));
+const InputFocus = lazy(() => import("./projects/useRef/InputFocus/InputFocus.jsx"));
+const RefCounter = lazy(() => import("./projects/useRef/Counter/RefCounter.jsx"));
+const SideBar = lazy(() => import("./projects/SideBar/SideBar.jsx"));
+const BasicUserNavigator = lazy(() => import("./projects/useParam/BasicParamsUse/BasicUserNavigator.jsx"));
+const SearchComponent = lazy(() => import("./projects/customHooks/BasicProjects/SearchComponent.jsx"));
+const DarkModeToggle = lazy(() => import("./projects/customHooks/BasicProjects/DarkModeToggle.jsx"));
+const FetchExample = lazy(() => import("./projects/customHooks/BasicProjects/FetchExample.jsx"));
+const Feed = lazy(() => import("./projects/customHooks/Hook-Libraries/Feed.jsx"));
+const Accordion = lazy(() => import("./projects/Accordion/App.jsx"));
+const Tabs = lazy(() => import("./projects/Tabs/App.jsx"));
+const DataTable = lazy(() => import("./projects/DataTable/App.jsx"));
+const LikeButton = lazy(() => import("./projects/LikeButton/App.jsx"));
+
+import './App.css';
 
 function App() {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/counter" element={<Counter />} /> 
-        <Route path="/textEdit" element={<TextEdit />} /> 
-        <Route path="/input" element={<InputFocus />} />
-        <Route path="/refcount" element={<RefCounter />} />
-        <Route path="/user/:id" element={<BasicUserNavigator />} />
-        <Route path="/searchComponent" element={<SearchComponent />} />
-        <Route path="/darkMode" element={<DarkModeToggle />} />
-        <Route path="/fetchExample" element={<FetchExample />} />
-        <Route path="/sidebar" element={<SideBar />} />
-        <Route path="/feed" element={<Feed />} />
-        <Route path="/accordian" element={<Accordion />} />
-      </Routes>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/counter" element={<Counter />} />
+          <Route path="/textEdit" element={<TextEdit />} />
+          <Route path="/input" element={<InputFocus />} />
+          <Route path="/refcount" element={<RefCounter />} />
+          <Route path="/user/:id" element={<BasicUserNavigator />} />
+          <Route path="/searchComponent" element={<SearchComponent />} />
+          <Route path="/darkMode" element={<DarkModeToggle />} />
+          <Route path="/fetchExample" element={<FetchExample />} />
+          <Route path="/sidebar" element={<SideBar />} />
+          <Route path="/feed" element={<Feed />} />
+          <Route path="/accordion" element={<Accordion />} />
+          <Route path="/tabs" element={<Tabs />} />
+          <Route path="/datatable" element={<DataTable />} />
+          <Route path="/likebutton" element={<LikeButton />} />
+        </Routes>
+      </Suspense>
     </Router>
   );
 }
+
 export default App;
